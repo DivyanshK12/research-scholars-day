@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block body %}
+<div class="parallax-container">
+  {% load static %}
+    <div class="parallax"><img src="{% static 'images/AcadBlock2.jpg' %}"></div>
+</div>
+<body>
+<div class = "container">
+  <!-- <h2>Title Goes here</h2> -->
+  <p class="flow-text">
+    IIT Hyderabad came into existence on 18th Aug 2008,
+    initially functioning from the temporary campus at Ordnance factory Medak
+    and in 2019 shifting fully to the 576-acre original campus site located
+    on the NH65 near Kandi circle in Sangareddy district. MHRD (now MoE)
+    established IITH as one among the second generation IITs in the country 
+    and Govt. of Japan has provided technical and financial assistance for the same.
+    </p>
+
+    <p class="flow-text">
+    The vision of IITH is to be a cradle for inventions 
+    and innovations. It aspires to advance knowledge and scholarship to 
+    students in science, technology and liberal arts, and equip them to 
+    handle the challenges of the nation and the world in the 21st century.
+    </p>
+
+    <p class="flow-text">
+    The mission of IITH is to be recognised as an ideator and a leader 
+    in higher education and research, and to develop human power with creativity, 
+    technology and passion for the betterment of India and humankind.
+    </p>
+    <hr>
+    <h6>For more information about PhD@IITH, click on this link:
+    <a href ="https://www.iith.ac.in/academics/phd/" class="indigo-text text-accent-3">https://www.iith.ac.in/academics/phd/</a></h6>
+  <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7eOU_PQoaK9rk7kBJnzSP3V413_x5oARhoP8cWoRoPYt1rw/viewform?embedded=true" width="640" height="955" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+</div><!--Container div-->
+{% endblock %}
+{% block material_script %}
+{% load static %}
+    <script type="text/javascript" src="{% static 'js/index.js'%}"></script>
+{% endblock %}

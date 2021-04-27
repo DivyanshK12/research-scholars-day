@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block styles %}
+{% load static %}
+<link type="text/css" rel="stylesheet" href="{% static 'css/info.css' %}">
+{% endblock %}
+{% block body %}
+<div class = "container">
+    <h2 class = "center">Useful Information</h2>
+    <hr>
+    <ul class="collection">
+        <li class="collection-item"><div>Doctoral Representatives<a href="mailto: phd_rep@gymkhana.iith.ac.in" class="secondary-content"><i class="material-icons  indigo-text text-accent-1">send</i></a></div></li>
+        <li class="collection-item"><div>Mess Secretary<a href="mailto: mess_secya@gymkhana.iith.ac.in" class="secondary-content"><i class="material-icons  indigo-text text-accent-1">send</i></a></div></li>
+        <li class="collection-item"><div>Academic secretary<a href="mailto: acad_affairs_secy@gymkhana.iith.ac.in" class="secondary-content"><i class="material-icons  indigo-text text-accent-1">send</i></a></div></li>
+        <li class="collection-item"><div>Student welfare secretary<a href="mailto: welfare.secy@gymkhana.iith.ac.in" class="secondary-content"><i class="material-icons  indigo-text text-accent-1">send</i></a></div></li>
+        <li class="collection-item"><div>Students Grievance Committee<a href="mailto:  sgc@iith.ac.in" class="secondary-content"><i class="material-icons  indigo-text text-accent-1">send</i></a></div></li>
+    </ul>
+    <div class="empty"></div>
+</div>
+{% endblock %}
+{% block material_script %}{% endblock %}
