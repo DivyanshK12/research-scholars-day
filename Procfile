@@ -1,0 +1,1 @@
+web: gunicorn rsd2021.wsgi

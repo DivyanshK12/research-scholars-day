@@ -9,7 +9,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY","hir9i1jir9fmcv2u8v92ugm552+/*-99f2c1r8
 DEBUG = False
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 
 # WhiteNoise configuration
 MIDDLEWARE = [                                                                   
@@ -26,18 +26,4 @@ MIDDLEWARE = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# DBHOST is only the server name, not the full URL
-# hostname = os.environ['DBHOST']
-
-# Configure Postgres database; the full username is username@servername,
-# which we construct using the DBHOST value.
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.environ['DBNAME'],
-#         'HOST': hostname + ".postgres.database.azure.com",
-#         'USER': os.environ['DBUSER'] + "@" + hostname,
-#         'PASSWORD': os.environ['DBPASS'] 
-#     }
-# }
+django_heroku.settings(locals())
